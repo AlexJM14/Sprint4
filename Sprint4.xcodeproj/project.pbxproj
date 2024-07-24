@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4703BEDE2C3B1880000381C8 /* AddUserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4703BEDD2C3B1880000381C8 /* AddUserView.swift */; };
+		4703BEE02C3B1896000381C8 /* UserDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4703BEDF2C3B1896000381C8 /* UserDetailView.swift */; };
+		4703BEE22C3B19EB000381C8 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4703BEE12C3B19EB000381C8 /* MapView.swift */; };
+		471C32352C473D8200BA02FD /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 471C32342C473D8200BA02FD /* LocationManager.swift */; };
 		472845012BFE160B00D8B643 /* Sprint4App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 472845002BFE160B00D8B643 /* Sprint4App.swift */; };
 		472845032BFE160B00D8B643 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 472845022BFE160B00D8B643 /* ContentView.swift */; };
 		472845052BFE160F00D8B643 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 472845042BFE160F00D8B643 /* Assets.xcassets */; };
@@ -14,6 +18,7 @@
 		472845122BFE160F00D8B643 /* Sprint4Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 472845112BFE160F00D8B643 /* Sprint4Tests.swift */; };
 		4728451C2BFE160F00D8B643 /* Sprint4UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4728451B2BFE160F00D8B643 /* Sprint4UITests.swift */; };
 		4728451E2BFE160F00D8B643 /* Sprint4UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4728451D2BFE160F00D8B643 /* Sprint4UITestsLaunchTests.swift */; };
+		47E8EFC22C00C9FB0046D0BB /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E8EFC12C00C9FB0046D0BB /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +39,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4703BEDD2C3B1880000381C8 /* AddUserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddUserView.swift; sourceTree = "<group>"; };
+		4703BEDF2C3B1896000381C8 /* UserDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailView.swift; sourceTree = "<group>"; };
+		4703BEE12C3B19EB000381C8 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		471C32342C473D8200BA02FD /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		472844FD2BFE160B00D8B643 /* Sprint4.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sprint4.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		472845002BFE160B00D8B643 /* Sprint4App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sprint4App.swift; sourceTree = "<group>"; };
 		472845022BFE160B00D8B643 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -44,6 +53,8 @@
 		472845172BFE160F00D8B643 /* Sprint4UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Sprint4UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4728451B2BFE160F00D8B643 /* Sprint4UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sprint4UITests.swift; sourceTree = "<group>"; };
 		4728451D2BFE160F00D8B643 /* Sprint4UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sprint4UITestsLaunchTests.swift; sourceTree = "<group>"; };
+		479465C22C3E0FAD005E1D40 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		47E8EFC12C00C9FB0046D0BB /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,8 +105,12 @@
 		472844FF2BFE160B00D8B643 /* Sprint4 */ = {
 			isa = PBXGroup;
 			children = (
+				479465C22C3E0FAD005E1D40 /* Info.plist */,
+				47E8EFC82C00CA420046D0BB /* View */,
+				47E8EFC62C00CA260046D0BB /* ViewModel */,
+				47E8EFC32C00CA070046D0BB /* Model */,
+				471C32342C473D8200BA02FD /* LocationManager.swift */,
 				472845002BFE160B00D8B643 /* Sprint4App.swift */,
-				472845022BFE160B00D8B643 /* ContentView.swift */,
 				472845042BFE160F00D8B643 /* Assets.xcassets */,
 				472845062BFE160F00D8B643 /* Preview Content */,
 			);
@@ -125,6 +140,32 @@
 				4728451D2BFE160F00D8B643 /* Sprint4UITestsLaunchTests.swift */,
 			);
 			path = Sprint4UITests;
+			sourceTree = "<group>";
+		};
+		47E8EFC32C00CA070046D0BB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				47E8EFC12C00C9FB0046D0BB /* User.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		47E8EFC62C00CA260046D0BB /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		47E8EFC82C00CA420046D0BB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				472845022BFE160B00D8B643 /* ContentView.swift */,
+				4703BEDD2C3B1880000381C8 /* AddUserView.swift */,
+				4703BEDF2C3B1896000381C8 /* UserDetailView.swift */,
+				4703BEE12C3B19EB000381C8 /* MapView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,6 +298,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4703BEDE2C3B1880000381C8 /* AddUserView.swift in Sources */,
+				4703BEE22C3B19EB000381C8 /* MapView.swift in Sources */,
+				47E8EFC22C00C9FB0046D0BB /* User.swift in Sources */,
+				471C32352C473D8200BA02FD /* LocationManager.swift in Sources */,
+				4703BEE02C3B1896000381C8 /* UserDetailView.swift in Sources */,
 				472845032BFE160B00D8B643 /* ContentView.swift in Sources */,
 				472845012BFE160B00D8B643 /* Sprint4App.swift in Sources */,
 			);
@@ -425,6 +471,7 @@
 				DEVELOPMENT_TEAM = UMG3XG3ASF;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Sprint4/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -454,6 +501,7 @@
 				DEVELOPMENT_TEAM = UMG3XG3ASF;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Sprint4/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
